@@ -20,23 +20,34 @@
   </head>
   <body>
     <header class="header">
-      <h1>Trybeshopp</h1>
+      <h1>Trybe$hopp</h1>
+      <!-- <select name="category" id="category">
+        <option value="Acessórios para Veículos">
+          Acessórios para Veículos
+        </option>
+        <option value="Celulares e Telefones">Celulares e Telefones</option>
+        <option value="Eletrônicos, Áudio e Vídeo">
+          Eletrônicos, Áudio e Vídeo
+        </option>
+        <option value="Games">Games</option>
+      </select> -->
+      <img id="shop-cart" src="image/3225130.svg" alt="carrinho de compras" />
     </header>
     <main>
+      <header class="cart__header">
+        <div class="triangle-cart"></div>
+        <span class="cart__title">Carrinho de compras</span>
+      </header>
       <section class="container">
         <section class="items"></section>
         <section class="cart">
-          <div class="cart__header">
-            <h2><i class="fas fa-shopping-cart fa-5x"></i> </h2>
-            <span class="cart__title">Carrinho de compras</span>
-          </div>
-          <button class="empty-cart">Esvaziar carrinho</button>
           <div class="cart__items-content">
             <ol class="cart__items"></ol>
           </div>
           <h3 class="cart__total-price-title">
-            Subtotal: R$ <span id="cart__total" class="total-price"></span>
+            Subtotal: <span id="cart__total" class="total-price"></span>
           </h3>
+          <button class="empty-cart">Esvaziar carrinho</button>
         </section>
       </section>
     </main>
